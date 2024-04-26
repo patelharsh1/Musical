@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>playlist</title>
+</head>
+<body>
+    <form action="/playlist" method="post">
+        {% csrf_token %}
+        name =
+        <input type="text" name="playlistname1">
+        <input type="hidden" value="{{PLAYLIST.MUSIC.SONG_TITLE}}" >
+        <button type="submit" >submit</button>
+    </form>
+</body>
+</html>
